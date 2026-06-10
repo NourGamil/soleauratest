@@ -1,9 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import ProductGrid from "@/components/site/ProductGrid";
-import { products } from "@/lib/site";
-import { IconSearch } from "@/components/ui/Icons";
+import ProductGrid from "../../components/site/ProductGrid";
+import { products } from "../../lib/site";
+import { IconSearch } from "../../components/ui/Icons";
 
 export default function SearchSection() {
   const [query, setQuery] = useState("");

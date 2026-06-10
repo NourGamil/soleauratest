@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { IconArrowRight, IconShield } from "@/components/ui/Icons";
+import { IconArrowRight, IconShield } from "../../components/ui/Icons";
 
 export default function AuthSection() {
   return (

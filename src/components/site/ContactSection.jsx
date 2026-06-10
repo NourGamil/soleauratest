@@ -1,5 +1,5 @@
-import { brand } from "@/lib/site";
-import { IconArrowRight } from "@/components/ui/Icons";
+import { brand } from "../../lib/site";
+import { IconArrowRight } from "../../components/ui/Icons";
 
 export default function ContactSection() {
   return (
