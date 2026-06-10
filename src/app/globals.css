@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Inter", "Segoe UI", Arial, sans-serif;
+  --font-sans: "Inter", "Segoe UI", Arial, sans-serif;
+  --color-ink: #110c08;
+  --color-espresso: #24150c;
+  --color-caramel: #d97706;
+  --color-sand: #f4e8d7;
+  --color-cream: #fff8ef;
+  --color-smoke: #8b7b6a;
+  --shadow-soft: 0 20px 70px rgba(45, 26, 11, 0.14);
+  --shadow-glow: 0 0 90px rgba(217, 119, 6, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #fff8ef;
+}
+
+body {
+  margin: 0;
+  color: #110c08;
+  background:
+    radial-gradient(circle at top left, rgba(217, 119, 6, 0.16), transparent 34rem),
+    radial-gradient(circle at 85% 10%, rgba(17, 12, 8, 0.08), transparent 28rem),
+    linear-gradient(135deg, #fff8ef 0%, #f6ead9 42%, #fffaf2 100%);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::selection {
+  color: #fff8ef;
+  background: #110c08;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.premium-grid {
+  background-image:
+    linear-gradient(rgba(17, 12, 8, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 12, 8, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(34px);
+}
+
+.hero-orb {
+  background: radial-gradient(circle, rgba(251, 146, 60, 0.42), rgba(245, 158, 11, 0.16) 34%, transparent 70%);
+  filter: blur(1px);
+}
+
+.glass-panel {
+  background: rgba(255, 248, 239, 0.74);
+  border: 1px solid rgba(17, 12, 8, 0.1);
+  box-shadow: 0 24px 80px rgba(45, 26, 11, 0.12);
+  backdrop-filter: blur(22px);
+}
+
+.dark-panel {
+  background:
+    radial-gradient(circle at 20% 10%, rgba(217, 119, 6, 0.22), transparent 26rem),
+    linear-gradient(135deg, #140e0a, #2b170d 48%, #0f0a07);
+}
+
+.card-shine::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(125deg, transparent 35%, rgba(255, 255, 255, 0.28), transparent 62%);
+  transform: translateX(-130%);
+  transition: transform 0.8s ease;
+}
+
+.card-shine:hover::before {
+  transform: translateX(130%);
+}
+
+:is(a, button, summary, label, [role="button"], input[type="button"], input[type="submit"], input[type="reset"], .clickable) {
+  cursor: pointer;
+}
+
+button:disabled,
+[aria-disabled="true"] {
+  cursor: not-allowed;
+}
