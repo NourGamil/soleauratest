@@ -59,7 +59,7 @@ export default function Navigation() {
           <nav className="flex items-center justify-between gap-4 px-4 py-3 md:px-5">
             <Link href="/" className="group flex min-w-0 items-center gap-3">
               <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-cream shadow-glow ring-1 ring-white/20 transition group-hover:rotate-[-6deg] group-hover:scale-105">
-                <img src="images/soleaura-mark.svg" alt="SoleAura mark" className="h-8 w-8" />
+                <img src="images/icon.svg" alt="SoleAura mark" className="h-8 w-8" />
               </span>
               <span className="leading-none">
                 <span className="block text-xl font-black tracking-[-0.06em] text-cream">{brand.name}</span>

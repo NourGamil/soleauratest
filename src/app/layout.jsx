@@ -6,8 +6,8 @@ export const metadata = {
   title: `${brand.name}`,
   description: "A premium sneaker and footwear e-commerce experience rebuilt with Next.js, Tailwind, and GSAP.",
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "icon.svg",
+    shortcut: "icon.svg",
   },
 };
 
